@@ -1,0 +1,97 @@
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+/* Cores principais */
+.marrom-escuro {
+  color: #5C4329;
+}
+
+.bg-marrom-escuro {
+  background-color: #5C4329;
+}
+
+.marrom-medio {
+  color: #8B6B4A;
+}
+
+.bg-marrom-medio {
+  background-color: #8B6B4A;
+}
+ 
+/* Azuis suaves */
+.azul-gelo {
+  color: #F5F9FC;
+}
+
+.bg-azul-gelo {
+  background-color: #F5F9FC;
+}
+
+.azul-poado {
+  color: #E6F0F7;
+}
+
+.bg-azul-poado {
+  background-color: #E6F0F7;
+}
+
+/* Destaques */
+.dourado {
+  color: #D4AF37;
+}
+
+.bg-dourado {
+  background-color: #D4AF37;
+}
+
+.rosa-poeira {
+  color: #E8C4C4;
+}
+
+.bg-rosa-poeira {
+  background-color: #E8C4C4;
+}
+
+/* Texturas e bordas */
+.borda-dourada {
+  border: 1px solid #D4AF37;
+}
+
+.sombra-suave {
+  box-shadow: 0 4px 6px rgba(92, 67, 41, 0.1);
+}
+
+/* Tipografia */
+.fonte-elegante {
+  font-family: 'Cormorant Garamond', serif;
+}
+
+.fonte-titulos {
+  font-family: 'Great Vibes', cursive;
+}
+
+.shadow-text {
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+}
+
+.shadow-bar {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.clip-trapezoid {
+  clip-path: polygon(
+    0% 0%, 
+    100% 0%, 
+    95% 100%, 
+    5% 100%
+  );
+}
+
+/* Efeito de máquina de escrever (opcional) */
+@keyframes typewriter {
+  from { width: 0 }
+  to { width: 100% }
+}
+
