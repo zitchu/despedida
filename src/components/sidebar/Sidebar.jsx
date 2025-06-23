@@ -14,14 +14,14 @@ const Sidebar = () => {
       {/* Botão de toggle - visível apenas em mobile */}
       <button
         onClick={toggleSidebar}
-        className="md:hidden fixed top-4 left-4 z-20 p-2 bg-marrom-escuro text-blue-200 rounded"
+        className="md:hidden fixed top-4 left-4 z-20 p-2 bg-vinho-suave texto-escuro rounded"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
 
       {/* Sidebar */}
       <div
-        className={`w-64 bg-marrom-medio h-full text-blue-200 fixed left-0 top-0 p-4 z-10 shadow-lg transition-transform duration-300 ease-in-out shadow-bar ${
+        className={`w-64 bg-vinho-suave h-full bege-rosado fixed left-0 top-0 p-4 z-10 shadow-lg transition-transform duration-300 ease-in-out shadow-bar ${
           isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
         }`}
       >
@@ -30,7 +30,7 @@ const Sidebar = () => {
             <li>
               <Link
                 to="/"
-                className="hover:text-blue-800 font-medium block"
+                className="hover:text-pink-800 font-medium block"
                 onClick={() => setIsOpen(false)}
               >
                 Home
@@ -39,7 +39,7 @@ const Sidebar = () => {
             <li>
               <Link
                 to="/galeria"
-                className="hover:text-blue-800 font-medium block"
+                className="hover:text-pink-800 font-medium block"
                 onClick={() => setIsOpen(false)}
               >
                 Galeria
@@ -48,7 +48,7 @@ const Sidebar = () => {
             <li>
               <Link
                 to="/agenda"
-                className="hover:text-blue-800 font-medium block"
+                className="hover:text-pink-800 font-medium block"
                 onClick={() => setIsOpen(false)}
               >
                 Programação
@@ -57,7 +57,7 @@ const Sidebar = () => {
             <li>
               <Link
                 to="/confirmacao"
-                className="hover:text-blue-800 font-medium block"
+                className="hover:text-pink-800 font-medium block"
                 onClick={() => setIsOpen(false)}
               >
                 Confirmação

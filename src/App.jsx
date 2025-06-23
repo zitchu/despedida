@@ -9,11 +9,11 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="flex min-h-screen">
+    <div className="flex min-h-full">
       <Sidebar />
       
       <div className="flex-1 flex flex-col  md:ml-64"> 
-        <main className="flex-1 p-20 bg-orange-100"> 
+        <main className="flex-1 p-10 pb-20 bg-areia"> 
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/galeria" element={<Galeria />} />

@@ -3,38 +3,79 @@
   width: 100%;
 }
 
-/* Cores principais */
-.marrom-escuro {
-  color: #5C4329;
+/* Paleta Principal - Verde & Pêssego */
+.verde-claro {
+  color: #B8E0C6;
 }
 
-.bg-marrom-escuro {
-  background-color: #5C4329;
+.bg-verde-claro {
+  background-color: #B8E0C6;
 }
 
-.marrom-medio {
-  color: #8B6B4A;
+.pessego {
+  color: #FFD8B8;
 }
 
-.bg-marrom-medio {
-  background-color: #8B6B4A;
-}
- 
-/* Azuis suaves */
-.azul-gelo {
-  color: #F5F9FC;
+.bg-pessego {
+  background-color: #FFD8B8;
 }
 
-.bg-azul-gelo {
-  background-color: #F5F9FC;
+.verde-musgo {
+  color: #8AAE92;
 }
 
-.azul-poado {
-  color: #E6F0F7;
+.bg-verde-musgo {
+  background-color: #8AAE92;
 }
 
-.bg-azul-poado {
-  background-color: #E6F0F7;
+/* Paleta Secundária - Rosa & Rosado */
+.rosa-poeira {
+  color: #E8B5B5;
+}
+
+.bg-rosa-poeira {
+  background-color: #E8B5B5;
+}
+
+.rosa-claro {
+  color: #FFE6E6;
+}
+
+.bg-rosa-claro {
+  background-color: #FFE6E6;
+}
+
+.vinho-suave {
+  color: #C48A8A;
+}
+
+.bg-vinho-suave {
+  background-color: #C48A8A;
+}
+
+/* Neutros & Bases */
+.bege-rosado {
+  color: #F3D7D7;
+}
+
+.bg-bege-rosado {
+  background-color: #F3D7D7;
+}
+
+.areia {
+  color: #F5E6D0;
+}
+
+.bg-areia {
+  background-color: #F5E6D0;
+}
+
+.branco-sujo {
+  color: #F8F4F0;
+}
+
+.bg-branco-sujo {
+  background-color: #F8F4F0;
 }
 
 /* Destaques */
@@ -46,17 +87,26 @@
   background-color: #D4AF37;
 }
 
-.rosa-poeira {
-  color: #E8C4C4;
+/* Textos */
+.texto-escuro {
+  color: #5A5A5A;
 }
 
-.bg-rosa-poeira {
-  background-color: #E8C4C4;
+.texto-cinza {
+  color: #4A4A4A;
 }
 
-/* Texturas e bordas */
+/* Bordas & Efeitos */
 .borda-dourada {
   border: 1px solid #D4AF37;
+}
+
+.borda-verde {
+  border: 1px solid #8AAE92;
+}
+
+.sombra-rosa {
+  box-shadow: 0 4px 8px rgba(232, 181, 181, 0.2);
 }
 
 .sombra-suave {
@@ -95,3 +145,67 @@
   to { width: 100% }
 }
 
+
+.inner-shadow-dark {
+  box-shadow: inset 0 14px 8px 0 rgba(0, 0, 0, 0.3), 
+              inset 0 16px 20px 0 rgba(0, 0, 0, 0.25);
+}
+
+.inner-shadow-dark-sm {
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.bronze-button {
+  padding: 6px 16px;
+
+  color: #000;
+  background: linear-gradient(
+    90deg,
+    #8b4513 5%,
+    #cd853f 15%,
+    #d2b48c 30%,
+    #a0522d 50%,
+    #d2b48c 70%,
+    #cd853f 80%,
+    #8b4513 90%
+  );
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.triangulo-abaulado {
+  position: relative;
+  width: 10%;
+  height: 10%;
+}
+
+.triangulo-abaulado::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #73864F; /* Cor do triângulo */
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  border-radius: 10px; /* Tenta arredondar, mas pode não ser perfeito */
+}
+
+@keyframes pingOnce {
+  0% {
+    transform: scale(0.5) translateY(10px);
+    opacity: 0;
+  }
+  20% {
+    transform: scale(1.05) translateY(0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.9) translateY(-5px);
+    opacity: 0;
+  }
+}
