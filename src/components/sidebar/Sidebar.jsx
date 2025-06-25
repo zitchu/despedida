@@ -56,6 +56,15 @@ const Sidebar = () => {
             </li>
             <li>
               <Link
+                to="/historia"
+                className="hover:text-pink-800 font-medium block"
+                onClick={() => setIsOpen(false)}
+              >
+                Nossa história
+              </Link>
+            </li>
+            <li>
+              <Link
                 to="/confirmacao"
                 className="hover:text-pink-800 font-medium block"
                 onClick={() => setIsOpen(false)}
