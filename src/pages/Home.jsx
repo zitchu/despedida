@@ -4,10 +4,10 @@ import casal1 from "../components/fotos/casal1.png";
 const Home = () => {
   return (
     <div className="min-h-screen p-8 bg-white rounded shadow-md">
-      <h1 className="text-2xl md:text-4xl font-bold fonte-titulos verde-musgo mb-6 shadow-text text-center ">
+      <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-emerald-700 mb-6 shadow-text text-center ">
         Chá da Lesllie e do Jean
       </h1>
-      <h4 className="bg-rose-100 texto-cinza bg-bege-rosado rounded-lg p-1 fonte-elegante basis-1/2">
+      <h4 className=" texto-cinza  rounded-lg p-1 font-bold fonte-elegante basis-1/2">
         Bem-vindo ao nosso site de nosso chá de casamento/despedida do Brasil.
         Na verdade o evento será um almoço festivo onde convidamos nossos
         queridos amigos e familiares a estarem conosco nesse momento de

@@ -14,7 +14,7 @@ function App() {
       <Sidebar />
 
       <div className="flex-1 flex flex-col  md:ml-64">
-        <main className="flex-1 p-10 pb-20 bg-areia">
+        <main className="flex-1 p-10 pb-20 bg-verde-musgo">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/galeria" element={<Galeria />} />
@@ -23,7 +23,7 @@ function App() {
             <Route path="/historia" element={<Historia/>} />
           </Routes>
         </main>
-        <Footer className="" />
+        {/* <Footer className="" /> */}
       </div>
     </div>
   );

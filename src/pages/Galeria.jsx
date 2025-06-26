@@ -8,12 +8,12 @@ const Galeria = () => {
       </h1>
       <div className="flex flex-col md:flex-row gap-4">
         {/* Espaço para as fotos */}
-        <div className="bg-rose-100 texto-cinza bg-bege-rosado rounded-lg p-1 text-justify basis-1/2">
+        <div className=" texto-cinza bg-verde-musgo rounded-lg p-1 text-justify basis-1/2">
           Como parte da nossa celebração, preparamos duas cestas únicas e
           repletas de surpresas — uma inspirada na doçura de um jardim secreto,
           outra no charme de um sonho parisiense.
         </div>
-        <div className="bg-rose-100 texto-cinza bg-bege-rosado rounded-lg p-1 text-justify basis-1/2">
+        <div className=" texto-cinza bg-verde-musgo rounded-lg p-1 text-justify basis-1/2">
           "Presentes para Nossa Nova Vida em Portugal" "Estamos começando uma
           aventura emocionante a dois em Portugal, e por isso, optamos por não
           ter uma lista de presentes tradicional. Se quiserem nos presentear,
@@ -25,7 +25,7 @@ const Galeria = () => {
           carinho, nosso muito obrigado por fazerem parte deste capítulo tão
           especial das nossas vidas!"
         </div>
-        <div className="bg-rose-100 texto-cinza bg-bege-rosado rounded-lg p-1 text-justify basis-1/2">
+        <div className=" texto-cinza bg-verde-musgo rounded-lg p-1 text-justify basis-1/2">
           "Cesta 'Jardim das Delícias': vinhos raros, sabores artesanais e
           segredos a descobrir..." "Cesta 'La Vie en Rose': sofisticação
           francesa, doces irresistíveis e um toque de luxo discreto."
