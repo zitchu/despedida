@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import teclaSound from "../../assets/tecla.mp3";
+import { KeyboardMusic } from "lucide-react";
 
 // Hook personalizado para o som
 const useSound = (soundFile) => {
@@ -125,3 +126,5 @@ const Footer = () => {
 };
 
 export default Footer;
+
+

@@ -23,7 +23,7 @@ function App() {
             <Route path="/historia" element={<Historia/>} />
           </Routes>
         </main>
-        {/* <Footer className="" /> */}
+        {/* <Footer /> */}
       </div>
     </div>
   );
