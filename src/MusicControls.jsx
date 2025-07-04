@@ -28,12 +28,11 @@ const MusicControls = () => {
 
   return (
     <div>
-      <div className="fixed text-center bottom-4 max-w-4xl mx-auto bg-white p-1 rounded shadow-lg">
-          
-          <p className="font-mono text-sm opacity-80">
-            © {new Date().getFullYear()} Lesllie e Jean
-          </p>
-        </div>
+      <div className="fixed text-center bottom-4 max-w-4xl mx-auto bg-white p-1 rounded shadow-lg z-10">
+        <p className="font-mono text-sm opacity-80">
+          © {new Date().getFullYear()} Lesllie e Jean
+        </p>
+      </div>
       <div className="fixed bottom-4 right-4 bg-white bg-opacity-80 p-3 rounded shadow-lg flex flex-col md:space-y-2 z-50 min-w-[150px] max-w-[200px] md:min-w-[200px] md:max-w-[250px]">
         <div
           ref={containerRef}
