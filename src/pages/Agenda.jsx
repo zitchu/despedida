@@ -3,7 +3,7 @@ import casal2 from "../components/fotos/casal2.png";
 
 const Agenda = () => {
   return (
-    <div className="min-h-screen p-8 bg-white">
+    <div className="min-h-[100dvh] p-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center">
           Programação
@@ -11,11 +11,17 @@ const Agenda = () => {
         <div className="space-y-4  fonte-elegante font-bold text-lg md:text-xl">
           <p>
             Prezados, como já dito anteriormente será um evento simples e
-            simbólico mas muito importante para nós.
+            simbólico mas muito importante para nós. Teremos além do almoço:
+            refrigerantes, sucos, água e{" "}
+            <strong className="text-rose-600">
+              50 litros de chope artesanal!!!
+            </strong>{" "}
+            Mas para além disso recomendamos que levem as bebidas de sua
+            preferência que não estejam inclusas.
           </p>
           <p>
             O Salão estará aberto desde 12h e o almoço será servido por volta de
-            14h
+            13h30
           </p>
         </div>
         <h2 className="font-bold text-xl my-2 text-rose-700 fonte-elegante">
@@ -25,6 +31,10 @@ const Agenda = () => {
           Como parte da nossa celebração, preparamos duas cestas únicas e
           repletas de surpresas — uma inspirada na doçura de um jardim secreto,
           outra no charme de um sonho parisiense.
+          <br />
+          <br />
+          Faremos sorteios das cestas para os convidados para dividir um pouco
+          da nossa alegria com vocês.
         </p>
         {/* Textos informativos abaixo da galeria */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">

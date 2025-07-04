@@ -9,7 +9,7 @@ const Endereco = () => {
     "Area Gourmet, Jardins Mangueiral - São Sebastião, Brasília - DF, 70297-400";
 
   return (
-    <div className="min-h-screen p-2 md:p-8 bg-white">
+    <div className="min-h-[100dvh] p-2 md:p-8 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center pt-4">
           Localização

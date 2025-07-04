@@ -19,14 +19,14 @@ const Galeria = () => {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-[100dvh] flex items-center justify-center">
         <div className="text-rose-800 text-xl">Carregando galeria...</div>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen p-4 md:p-8 bg-white">
+    <div className="min-h-[100dvh] p-4 md:p-8 bg-white">
       <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center">
         Nossa Galeria
       </h1>

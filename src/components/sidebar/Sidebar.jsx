@@ -1,14 +1,20 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import logo from "../fotos/logo.png";
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  const linkClass =
+    "font-medium block transform transition-all duration-300 ease-in-out hover:translate-x-3 px-4 py-2 rounded-l-xl rounded-r";
+  const activeClass = "bg-verde-musgo text-rose-800 shadow-inner translate-x-3";
+  const inactiveClass = "text-emerald-700 hover:text-pink-800";
 
   return (
     <>
@@ -22,24 +28,27 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div
-        className={`flex flex-col w-64 bg-areia  h-full text-emerald-700 fixed left-0 top-0 p-4 z-10 shadow-lg transition-transform duration-300 ease-in-out shadow-bar ${
-          isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"
-        }`}
+        className={`flex flex-col w-64 bg-areia fixed left-0 top-0 p-4 z-10 shadow-lg transition-transform duration-300 ease-in-out shadow-bar
+  ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
+  h-screen overflow-auto md:h-[100dvh]
+  `}
       >
         <div className="relative inline-block">
           <img
             src={logo}
             alt="logo do casal"
-            className=" backdrop-blur-lg rounded-full cursor-none"
+            className="w-28 md:w-36 lg:w-40 xl:w-48 rounded-full mx-auto my-8"
           />
         </div>
         <div>
           <nav>
-            <ul className="space-y-4 md:space-y-12 pt-16 md:mt-0 uppercase">
+            <ul className="space-y-2 md:space-y-3 pt-16 md:mt-0 uppercase ">
               <li>
                 <Link
                   to="/"
-                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  className={`${linkClass} ${
+                    location.pathname === "/" ? activeClass : inactiveClass
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   Home
@@ -48,7 +57,11 @@ const Sidebar = () => {
               <li>
                 <Link
                   to="/historia"
-                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  className={`${linkClass} ${
+                    location.pathname === "/historia"
+                      ? activeClass
+                      : inactiveClass
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   Nossa história
@@ -57,7 +70,11 @@ const Sidebar = () => {
               <li>
                 <Link
                   to="/agenda"
-                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  className={`${linkClass} ${
+                    location.pathname === "/agenda"
+                      ? activeClass
+                      : inactiveClass
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   Programação
@@ -66,7 +83,11 @@ const Sidebar = () => {
               <li>
                 <Link
                   to="/galeria"
-                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  className={`${linkClass} ${
+                    location.pathname === "/galeria"
+                      ? activeClass
+                      : inactiveClass
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   Galeria
@@ -75,7 +96,9 @@ const Sidebar = () => {
               <li>
                 <Link
                   to="/lista"
-                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  className={`${linkClass} ${
+                    location.pathname === "/lista" ? activeClass : inactiveClass
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   Lista de presentes
@@ -84,7 +107,11 @@ const Sidebar = () => {
               <li>
                 <Link
                   to="/endereco"
-                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  className={`${linkClass} ${
+                    location.pathname === "/endereco"
+                      ? activeClass
+                      : inactiveClass
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   Endereço
@@ -93,7 +120,11 @@ const Sidebar = () => {
               <li>
                 <Link
                   to="/confirmacao"
-                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  className={`${linkClass} ${
+                    location.pathname === "/confirmacao"
+                      ? activeClass
+                      : inactiveClass
+                  }`}
                   onClick={() => setIsOpen(false)}
                 >
                   Confirmação

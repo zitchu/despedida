@@ -4,7 +4,6 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Paleta principal do casamento
         marrom: {
           claro: "#f5f0eb",
           medio: "#8B6B4A",
@@ -16,7 +15,7 @@ export default {
           poalvo: "#E6F0F7",
           sereno: "#D0E3F0",
         },
-        // Cores de destaque
+
         dourado: {
           claro: "#F4E5C2",
           medio: "#D4AF37",
@@ -24,11 +23,11 @@ export default {
         },
       },
       fontFamily: {
-        sans: ['"Cormorant Garamond"', "serif"], // Fonte elegante
-        script: ['"Great Vibes"', "cursive"], // Fonte para títulos
+        sans: ['"Cormorant Garamond"', "serif"],
+        script: ['"Great Vibes"', "cursive"],
       },
       backgroundImage: {
-        "noiva-pattern": "url('/src/assets/bg-texture.png')", // Adicione depois
+        "noiva-pattern": "url('/src/assets/bg-texture.png')",
       },
     },
   },

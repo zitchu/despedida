@@ -3,7 +3,7 @@ import qrcode from "../components/fotos/qrcode.png";
 
 const Lista = () => {
   return (
-    <div className="min-h-screen p-8 bg-white">
+    <div className="min-h-[100dvh] p-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center pt-4">
           Lista de presentes?
