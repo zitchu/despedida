@@ -7,16 +7,32 @@ const Home = () => {
       <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-emerald-700 mb-6 shadow-text text-center ">
         Chá da Lesllie e do Jean
       </h1>
-      <h4 className=" texto-cinza  rounded-lg p-1 font-bold fonte-elegante basis-1/2">
+      <h4 className=" texto-cinza  rounded-lg p-1  fonte-elegante basis-1/2">
         Bem-vindo ao nosso site de nosso chá de casamento/despedida do Brasil.
         Na verdade o evento será um almoço festivo onde convidamos nossos
         queridos amigos e familiares a estarem conosco nesse momento de
         celebração de nossa partida para o velho continente ou mais
-        especificamente para a "Guiana Brasileira", "Pernambuco em Pé" ou "Mato
-        Grosso do Norte".
+        especificamente para a "Guiana Brasileira" ou seja{" "}
+        <b className="text-white font-extrabold bg-green-700 rounded-l-lg pl-1">
+          Po
+        </b>
+        <b className="text-white bg-yellow-400 font-extrabold">r</b>
+        <b className="text-white bg-red-700 rounded-r-lg pr-1 font-extrabold">
+          tugal
+        </b>
+        .
         <br />
-        Será um evento simples de almoço mas com muita alegria pra celebrar o amor
-        que temos um pelo outro e por vocês. <br/>❤︎❤︎❤︎
+        Será um evento simples de almoço mas com muita alegria pra celebrar o
+        amor que temos um pelo outro e por vocês. <br />
+        <div className="w-full flex   justify-center m-2">
+          <b className="text-white font-extrabold bg-green-700 rounded-l-lg pl-1">
+            ❤︎
+          </b>
+          <b className="text-white font-extrabold bg-yellow-400 px-1">❤︎</b>
+          <b className="text-white font-extrabold bg-red-700 rounded-r-lg pr-1">
+            ❤︎
+          </b>
+        </div>
       </h4>
       <div className="relative mx-1 p-2 flex ">
         <div className="relative group">
