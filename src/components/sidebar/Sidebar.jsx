@@ -15,7 +15,7 @@ const Sidebar = () => {
       {/* Botão de toggle - visível apenas em mobile */}
       <button
         onClick={toggleSidebar}
-        className="md:hidden fixed top-4 left-4 z-20 p-2 bg-areia texto-escuro rounded"
+        className="md:hidden fixed top-4 left-4 z-20 p-2 bg-areia texto-escuro rounded shadow-md"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
@@ -35,7 +35,7 @@ const Sidebar = () => {
         </div>
         <div>
           <nav>
-            <ul className="space-y-16 pt-16 md:mt-0 uppercase">
+            <ul className="space-y-12 pt-16 md:mt-0 uppercase">
               <li>
                 <Link
                   to="/"
@@ -47,11 +47,11 @@ const Sidebar = () => {
               </li>
               <li>
                 <Link
-                  to="/galeria"
+                  to="/historia"
                   className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
                   onClick={() => setIsOpen(false)}
                 >
-                  Galeria
+                  Nossa história
                 </Link>
               </li>
               <li>
@@ -65,11 +65,29 @@ const Sidebar = () => {
               </li>
               <li>
                 <Link
-                  to="/historia"
+                  to="/galeria"
                   className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
                   onClick={() => setIsOpen(false)}
                 >
-                  Nossa história
+                  Galeria
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/lista"
+                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Lista de presentes
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="/endereco"
+                  className="hover:text-pink-800 font-medium block transform transition-transform duration-300 ease-in-out hover:translate-x-3"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Endereço
                 </Link>
               </li>
               <li>
