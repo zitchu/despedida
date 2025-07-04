@@ -8,7 +8,7 @@ const Home = () => {
         <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center ">
           Chá da Lesllie e do Jean
         </h1>
-        <h4 className=" fonte-elegante text-lg md:text-xl text-justify">
+        <h4 className=" fonte-elegante text-lg md:text-xl ">
           Bem-vindo ao nosso site de nosso "chá de casamento/despedida do
           Brasil". Na verdade o evento será um almoço festivo onde convidamos
           nossos queridos amigos e familiares a estarem conosco nesse momento de

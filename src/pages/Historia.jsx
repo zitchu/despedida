@@ -9,7 +9,7 @@ const Historia = () => {
           História
         </div>
         <div className="relative mx-1 p-2 flex flex-col">
-          <div className="fonte-elegante text-lg md:text-xl text-justify">
+          <div className="fonte-elegante text-lg md:text-xl ">
             Nossa história começa como muitas outras,{" "}
             <s>definitivamente não foi pelo Tinder</s>, onde um acaso online nos
             trouxe proximidade. Vivíamos momentos diferentes em nossas vidas,

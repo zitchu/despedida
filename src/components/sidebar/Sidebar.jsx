@@ -35,7 +35,7 @@ const Sidebar = () => {
         </div>
         <div>
           <nav>
-            <ul className="space-y-12 pt-16 md:mt-0 uppercase">
+            <ul className="space-y-4 md:space-y-12 pt-16 md:mt-0 uppercase">
               <li>
                 <Link
                   to="/"

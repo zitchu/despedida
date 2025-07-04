@@ -59,8 +59,8 @@ const Endereco = () => {
                   Abrir no Waze
                 </a>
 
-                <a
-                  href={`https://m.uber.com/ul/?action=setPickup&client_id=<YOUR_CLIENT_ID>&pickup=my_location&dropoff[formatted_address]=${encodeURIComponent(
+                {/* <a
+                  href={`https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=${encodeURIComponent(
                     enderecoUber
                   )}&dropoff[latitude]=${latitude}&dropoff[longitude]=${longitude}`}
                   target="_blank"
@@ -68,14 +68,16 @@ const Endereco = () => {
                   className="flex items-center justify-center gap-2 w-full bg-black hover:bg-gray-800 text-white px-4 py-3 rounded-lg transition-colors"
                 >
                   Pedir Uber
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
         </div>
         <div className="relative mx-1 p-2 flex ">
           <div className="relative group">
-            <div className="absolute fonte-elegante font-bold top-1 xl:top-24">Nos vemos lá!!!</div>
+            <div className="absolute fonte-elegante font-bold top-1 xl:top-24">
+              Nos vemos lá!!!
+            </div>
             <div
               className="absolute inset-0 bg-cover bg-center scale-110 blur-sm z-0 animate-pulse md:animate-none opacity-20 group-hover:opacity-60 transition-all ease-in-out duration-500"
               style={{ backgroundImage: `url(${casal3})` }}

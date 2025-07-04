@@ -8,7 +8,7 @@ const Lista = () => {
         <h2 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center pt-4">
           Lista de presentes?
         </h2>
-        <div className="text-gray-700 fonte-elegante font-bold text-lg md:text-xl rounded p-4 text-justify">
+        <div className="text-gray-700 fonte-elegante font-bold text-lg md:text-xl rounded p-4 ">
           <p>
             Nós estamos começando uma aventura emocionante a dois em Portugal, e por
             isso, optamos por não ter uma lista de presentes tradicional. Se

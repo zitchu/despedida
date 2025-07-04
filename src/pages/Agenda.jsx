@@ -28,7 +28,7 @@ const Agenda = () => {
         </p>
         {/* Textos informativos abaixo da galeria */}
         <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="text-gray-700 bg-verde-claro rounded-lg p-4 text-justify">
+          <div className="text-gray-700 bg-verde-claro rounded-lg p-4 ">
             <h2 className="font-bold fonte-titulos text-xl mb-2 areia shadow-text2 ">
               Delicias do Jardim Secreto
             </h2>
@@ -41,7 +41,7 @@ const Agenda = () => {
               jardim secreto.
             </p>
           </div>
-          <div className="text-white bg-rosa-poeira rounded-lg p-4 text-justify">
+          <div className="text-white bg-rosa-poeira rounded-lg p-4 ">
             <h2 className="font-bold fonte-titulos  mb-2 text-rose-800 shadow-text text-xl">
               La Vie En Rose
             </h2>
