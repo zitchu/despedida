@@ -12,8 +12,8 @@ const Sidebar = () => {
   };
 
   const linkClass =
-    "font-medium block transform transition-all duration-300 ease-in-out hover:translate-x-3 px-4 py-2 rounded-l-xl rounded-r";
-  const activeClass = "bg-verde-musgo text-rose-800 shadow-inner translate-x-3";
+    "font-medium block transform transition-all duration-300 ease-in-out hover:translate-x-3 px-4 py-2 rounded-l-xl ";
+  const activeClass = "bg-verde-musgo text-rose-800 shadow-inner translate-x-4";
   const inactiveClass = "text-emerald-700 hover:text-pink-800";
 
   return (

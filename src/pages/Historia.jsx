@@ -6,11 +6,11 @@ const Historia = () => {
     <div className="min-h-[100dvh] p-8 bg-white">
       <div className="max-w-6xl mx-auto">
         <div className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center">
-          História
+          Nossa história...
         </div>
         <div className="relative mx-1 p-2 flex flex-col">
           <div className="fonte-elegante text-lg md:text-xl ">
-            Nossa história começa como muitas outras,{" "}
+            Começa como muitas outras,{" "}
             <s>definitivamente não foi pelo Tinder</s>, onde um acaso online nos
             trouxe proximidade. Vivíamos momentos diferentes em nossas vidas,
             mas, sem saber, começava ali, naquela troca de mensagens, nossa

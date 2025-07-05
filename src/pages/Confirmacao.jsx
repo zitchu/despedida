@@ -91,7 +91,7 @@ const Confirmacao = () => {
         {/* Formulário FormSubmit */}
         <form
           target="_blank"
-          action="https://formsubmit.co/monteiro.jean@hotmail.com"
+          action="https://formsubmit.co/04566119d31e9af50c617f05bd4133d7"
           method="POST"
           className="space-y-6"
         >
@@ -174,6 +174,8 @@ const Confirmacao = () => {
           />
           <input type="hidden" name="_template" value="box" />
           <input type="text" name="_honey" style={{ display: "none" }} />
+          <input type="hidden" name="_next" value="https://leslliejean.netlify.app/obrigado" />
+
 
           <button
             type="submit"

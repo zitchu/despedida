@@ -1,6 +1,5 @@
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/sidebar/Sidebar";
-import Footer from "./components/footer/Footer";
 import Home from "./pages/Home";
 import Galeria from "./pages/Galeria";
 import Agenda from "./pages/Agenda";
@@ -10,13 +9,13 @@ import { AudioProvider } from "./AudioContext";
 import MusicControls from "./MusicControls";
 import Lista from "./pages/Lista";
 import Endereco from "./pages/Endereco";
+import Obrigado from "./pages/Obrigado";
 import "./App.css";
 
 function App() {
   return (
     <AudioProvider>
       {" "}
-      {/* Envolve toda a aplicação */}
       <div className="flex min-h-full">
         <Sidebar />
 
@@ -31,9 +30,9 @@ function App() {
               <Route path="/historia" element={<Historia />} />
               <Route path="/endereco" element={<Endereco />} />
               <Route path="/lista" element={<Lista />} />
+              <Route path="/obrigado" element={<Obrigado />} />
             </Routes>
           </main>
-          {/* <Footer /> */}
         </div>
       </div>
     </AudioProvider>

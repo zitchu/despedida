@@ -13,11 +13,9 @@ const Agenda = () => {
             Prezados, como já dito anteriormente será um evento simples e
             simbólico mas muito importante para nós. Teremos além do almoço:
             refrigerantes, sucos, água e{" "}
-            <strong className="text-rose-600">
-              50 litros de chope artesanal!!!
-            </strong>{" "}
-            Mas para além disso recomendamos que levem as bebidas de sua
-            preferência que não estejam inclusas.
+            <strong className="text-rose-600">chope artesanal!!!</strong> Mas
+            para além disso recomendamos que levem as bebidas de sua preferência
+            que não estejam inclusas.
           </p>
           <p>
             O Salão estará aberto desde 12h e o almoço será servido por volta de

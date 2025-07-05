@@ -8,6 +8,9 @@ const Home = () => {
         <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center ">
           Chá da Lesllie e do Jean
         </h1>
+        <h2 className="font-bold text-2xl my-2 text-rose-800 fonte-elegante">
+          Dia 30 de agosto de 2025, você é nosso(a) convidado(a):
+        </h2>
         <h4 className=" fonte-elegante text-lg md:text-xl ">
           Bem-vindo ao nosso site de nosso "chá de casamento/despedida do
           Brasil". Na verdade o evento será um almoço festivo onde convidamos

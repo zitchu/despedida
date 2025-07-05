@@ -33,7 +33,7 @@ const Lista = () => {
           <img
             src={qrcode}
             className="h-auto max-h-full md:max-w-[50%] object-contain cursor-pointer shadow-md rounded"
-            alt="Foto do casal"
+            alt="qr code PIX"
           />
         </div>
       </div>
