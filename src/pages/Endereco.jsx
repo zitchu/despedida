@@ -11,7 +11,7 @@ const Endereco = () => {
   return (
     <div className="min-h-[100dvh] p-2 md:p-8 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center pt-4">
+        <h1 className="text-2xl md:text-5xl font-bold fonte-titulos text-rose-800 mb-6 shadow-text text-center">
           Localização
         </h1>
 

@@ -23,7 +23,7 @@ const Obrigado = () => {
       </div>
 
       {/* Título principal */}
-      <h1 className="text-3xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6">
+      <h1 className="text-2xl md:text-5xl font-bold fonte-titulos text-rose-800 mb-6 shadow-text text-center">
         Confirmação Recebida!
       </h1>
 

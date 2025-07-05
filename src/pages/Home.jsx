@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="min-h-[100dvh] p-8 bg-white rounded shadow-md ">
       <div className="max-w-6xl mx-auto">
-        <h1 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center ">
+        <h1 className="text-2xl md:text-5xl font-bold fonte-titulos text-rose-800 mb-6 shadow-text text-center">
           Chá da Lesllie e do Jean
         </h1>
         <h2 className="font-bold text-2xl my-2 text-rose-800 fonte-elegante">

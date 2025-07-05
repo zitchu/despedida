@@ -12,9 +12,9 @@ const Sidebar = () => {
   };
 
   const linkClass =
-    "font-medium block transform transition-all duration-300 ease-in-out hover:translate-x-3 px-4 py-2 rounded-l-xl ";
-  const activeClass = "bg-verde-musgo text-rose-800 shadow-inner translate-x-4";
-  const inactiveClass = "text-emerald-700 hover:text-pink-800";
+    "font-bold fonte-elegante capitalize block transform transition-all duration-300 ease-in-out px-4 py-2 rounded-l-xl text-xl";
+  const activeClass = "bg-verde-musgo text-rose-800 translate-x-4";
+  const inactiveClass = "text-emerald-700 hover:text-pink-800 hover:translate-x-4";
 
   return (
     <>
@@ -28,7 +28,7 @@ const Sidebar = () => {
 
       {/* Sidebar */}
       <div
-        className={`flex flex-col w-64 bg-areia fixed left-0 top-0 p-4 z-10 shadow-lg transition-transform duration-300 ease-in-out shadow-bar
+        className={`flex flex-col w-64 bg-areia fixed left-0 top-0 p-4 z-10 transition-transform duration-300 ease-in-out shadow-bar-white
   ${isOpen ? "translate-x-0" : "-translate-x-full md:translate-x-0"}
   h-screen overflow-auto md:h-[100dvh]
   `}
@@ -42,7 +42,7 @@ const Sidebar = () => {
         </div>
         <div>
           <nav>
-            <ul className="space-y-2 md:space-y-3 pt-16 md:mt-0 uppercase ">
+            <ul className="space-y-2 md:space-y-3 pt-16 md:mt-0 uppercase">
               <li>
                 <Link
                   to="/"

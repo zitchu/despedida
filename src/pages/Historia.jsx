@@ -5,7 +5,7 @@ const Historia = () => {
   return (
     <div className="min-h-[100dvh] p-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <div className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center">
+        <div className="text-2xl md:text-5xl font-bold fonte-titulos text-rose-800 mb-6 shadow-text text-center">
           Nossa história...
         </div>
         <div className="relative mx-1 p-2 flex flex-col">

@@ -5,7 +5,7 @@ const Lista = () => {
   return (
     <div className="min-h-[100dvh] p-8 bg-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-2xl md:text-4xl font-bold fonte-elegante text-rose-800 mb-6 shadow-text text-center pt-4">
+        <h2 className="text-2xl md:text-5xl font-bold fonte-titulos text-rose-800 mb-6 shadow-text text-center">
           Lista de presentes?
         </h2>
         <div className="text-gray-700 fonte-elegante font-bold text-lg md:text-xl rounded p-4 ">
