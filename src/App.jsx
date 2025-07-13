@@ -11,31 +11,34 @@ import Lista from "./pages/Lista";
 import Endereco from "./pages/Endereco";
 import Obrigado from "./pages/Obrigado";
 import "./App.css";
+import { HelmetProvider } from "react-helmet-async";
 
 function App() {
   return (
-    <AudioProvider>
-      {" "}
-      <div className="flex min-h-full">
-        <Sidebar />
+    <HelmetProvider>
+      <AudioProvider>
+        {" "}
+        <div className="flex min-h-full">
+          <Sidebar />
 
-        <div className="flex-1 flex flex-col md:ml-64">
-          <main className="flex-1 p-10 pb-20 bg-verde-musgo">
-            <MusicControls />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/galeria" element={<Galeria />} />
-              <Route path="/agenda" element={<Agenda />} />
-              <Route path="/confirmacao" element={<Confirmacao />} />
-              <Route path="/historia" element={<Historia />} />
-              <Route path="/endereco" element={<Endereco />} />
-              <Route path="/lista" element={<Lista />} />
-              <Route path="/obrigado" element={<Obrigado />} />
-            </Routes>
-          </main>
+          <div className="flex-1 flex flex-col md:ml-64">
+            <main className="flex-1 p-10 pb-20 bg-verde-musgo">
+              <MusicControls />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/galeria" element={<Galeria />} />
+                <Route path="/agenda" element={<Agenda />} />
+                <Route path="/confirmacao" element={<Confirmacao />} />
+                <Route path="/historia" element={<Historia />} />
+                <Route path="/endereco" element={<Endereco />} />
+                <Route path="/lista" element={<Lista />} />
+                <Route path="/obrigado" element={<Obrigado />} />
+              </Routes>
+            </main>
+          </div>
         </div>
-      </div>
-    </AudioProvider>
+      </AudioProvider>
+    </HelmetProvider>
   );
 }
 
