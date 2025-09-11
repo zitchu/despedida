@@ -24,18 +24,18 @@ const Lista = () => {
           </p>
           <p>
             Caso queira nos ajudar segue os dados PIX
-            <br/> Chave CPF: 015420621-01 ▸ Nome: Jeanluiz Ferreira Porto
+            <br/> Chave CPF: xxxxxxx-xx ▸ Nome: Jeanluiz F P
             Monteiro
-            <br/> Banco do Brasil
+            <br/> Banco xxxx
           </p>
         </div>
-        <div className="relative z-[9] h-full w-full flex items-center justify-center ">
+        {/* <div className="relative z-[9] h-full w-full flex items-center justify-center ">
           <img
             src={qrcode}
             className="h-auto max-h-full md:max-w-[50%] object-contain cursor-pointer shadow-md rounded"
             alt="qr code PIX"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );

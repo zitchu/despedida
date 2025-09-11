@@ -2,11 +2,10 @@ import React, { useState } from "react";
 import casal3 from "../components/fotos/casal3.png";
 
 const Endereco = () => {
-  const latitude = -15.895785;
-  const longitude = -47.802467;
-
-  const enderecoUber =
-    "Area Gourmet, Jardins Mangueiral - São Sebastião, Brasília - DF, 70297-400";
+  // Coordenadas consistentes com o iframe do Google Maps
+  const latitude = -15.830392;
+  const longitude = -47.952151;
+  const endereco = "Rodoviária Interestadual, Brasília - DF";
 
   return (
     <div className="min-h-[100dvh] p-2 md:p-8 bg-white">
@@ -18,14 +17,15 @@ const Endereco = () => {
         <div className="flex flex-col md:flex-row gap-2 items-center">
           {/* Mapa */}
           <div className="w-full md:w-2/3 h-96 rounded overflow-hidden shadow-xl">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d675.8777894223272!2d-47.80246653850496!3d-15.895784884166554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1751642748522!5m2!1spt-BR!2sbr"
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4553.2185596728905!2d-47.95215102411146!3d-15.830392123844062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3027cffae1e7%3A0x345c596fe25a674b!2sRodovi%C3%A1ria%20Interestadual!5e1!3m2!1spt-BR!2sbr!4v1757604978961!5m2!1spt-BR!2sbr" 
               width="100%"
               height="100%"
               className="w-full h-full"
               allowFullScreen
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
+              title="Localização do Evento"
             ></iframe>
           </div>
 
@@ -36,13 +36,12 @@ const Endereco = () => {
                 Endereço
               </h3>
               <p className="text-gray-600 mb-4">
-                SHMA QC 10 Espaço Gourmet 1 e 2, Jardins Mangueiral, Jardim
-                Botânico - DF
+                {endereco}
               </p>
 
               <div className="space-y-4">
                 <a
-                  href="https://maps.app.goo.gl/D9EgSk5ZZycSpCDm7"
+                  href={`https://maps.app.goo.gl/?q=${encodeURIComponent(endereco)}&api=1`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-rose-800 hover:bg-rose-600 text-white text-center px-6 py-3 rounded-lg transition-colors"
@@ -51,7 +50,7 @@ const Endereco = () => {
                 </a>
 
                 <a
-                  href="https://waze.com/ul?ll=-15.895785,-47.802467&navigate=yes"
+                  href={`https://waze.com/ul?ll=${latitude},${longitude}&navigate=yes`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center px-6 py-3 rounded-lg transition-colors"
@@ -59,16 +58,16 @@ const Endereco = () => {
                   Abrir no Waze
                 </a>
 
-                {/* <a
+                <a
                   href={`https://m.uber.com/ul/?action=setPickup&pickup=my_location&dropoff[formatted_address]=${encodeURIComponent(
-                    enderecoUber
+                    endereco
                   )}&dropoff[latitude]=${latitude}&dropoff[longitude]=${longitude}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 w-full bg-black hover:bg-gray-800 text-white px-4 py-3 rounded-lg transition-colors"
                 >
                   Pedir Uber
-                </a> */}
+                </a>
               </div>
             </div>
           </div>

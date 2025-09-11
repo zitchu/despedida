@@ -15,7 +15,7 @@ const Confirmacao = () => {
       mensagem += `Vou levar acompanhante`;
     }
 
-    return `https://wa.me/5561981024948?text=${mensagem}`;
+    return `https://wa.me/5561999998888?text=${mensagem}`;
   };
 
   return (
@@ -91,7 +91,7 @@ const Confirmacao = () => {
         {/* Formulário FormSubmit */}
         <form
           target="_blank"
-          action="https://formsubmit.co/04566119d31e9af50c617f05bd4133d7"
+          action=""
           method="POST"
           className="space-y-6"
         >
